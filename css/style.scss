@@ -135,7 +135,7 @@ header{
 
     a{
         text-decoration: none;
-        font-size: 1.3em;
+        font-size: 1.1em;
         width: fit-content;
         transition: 0.2s;
 
@@ -193,6 +193,11 @@ header{
 /* breakdown p/ mobile */
 @media only screen and (max-width: 767px) {
 header{
+    #logo{
+        max-width: 125px;
+        align-self: center;
+    }
+
     nav{
         display: none;
     }

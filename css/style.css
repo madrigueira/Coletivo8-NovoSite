@@ -125,7 +125,7 @@ header button:hover {
 }
 #menu a {
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.1em;
   width: -moz-fit-content;
   width: fit-content;
   transition: 0.2s;
@@ -170,6 +170,10 @@ header button:hover {
 
 /* breakdown p/ mobile */
 @media only screen and (max-width: 767px) {
+  header #logo {
+    max-width: 125px;
+    align-self: center;
+  }
   header nav {
     display: none;
   }
