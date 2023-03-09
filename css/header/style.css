@@ -1,0 +1,188 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #141A28;
+}
+
+/* VARIAVEIS */
+/*------------------------------ HEADER ------------------------------*/
+header {
+  display: flex;
+  max-width: 1250px;
+  margin: auto;
+  padding: 15px 3vh;
+  min-height: 125px;
+}
+header nav {
+  display: flex;
+  margin-left: auto;
+  align-self: center;
+}
+header nav a {
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1em;
+  padding: 5px 15px;
+  transition: 0.2s;
+}
+header nav a#quem-somos:hover {
+  color: #EBB02A;
+}
+header nav a#solucoes:hover {
+  color: #EBB02A;
+}
+header nav a#solucoes:hover + .dropdown {
+  height: 5em;
+}
+header nav a#contato {
+  border: 2px solid #E20E46;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+header nav a#contato:hover {
+  background-color: #E20E46;
+}
+header nav .submenu {
+  display: flex;
+}
+header nav .submenu .dropdown {
+  display: grid;
+  position: absolute;
+  margin-top: 30px;
+  transition: 0.5s;
+  height: 0;
+  overflow: hidden;
+}
+header nav .submenu .dropdown:hover {
+  height: 5em;
+}
+header nav .submenu .dropdown a:hover {
+  color: #EBB02A;
+}
+header button {
+  display: none !important;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  font-size: 2em !important;
+  background-color: transparent;
+  border: 2px solid #E20E46;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  align-self: center;
+}
+header button:hover {
+  background-color: #E20E46;
+}
+
+/* tela de menu mobile */
+#menu {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0e131d;
+  transform: translateX(-100vw);
+  transition: 0.7s;
+  padding: 30px;
+  gap: 30px;
+}
+#menu.active {
+  transform: translateX(0vw);
+}
+#menu .top {
+  display: flex;
+  padding-bottom: 25px;
+}
+#menu .top img {
+  max-width: 125px;
+}
+#menu .top button {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  font-size: 2em !important;
+  background-color: transparent;
+  border: 2px solid #E20E46;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  align-self: center;
+}
+#menu .top button:hover {
+  background-color: #E20E46;
+}
+#menu a {
+  text-decoration: none;
+  font-size: 1.1em;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.2s;
+}
+#menu a:hover {
+  color: #EBB02A;
+}
+#menu .dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+#menu .redes {
+  margin: auto auto 0 auto;
+}
+#menu .redes img {
+  width: 42px;
+  margin: 0 5px;
+}
+
+/* tira a logo da header na home */
+.home {
+  margin-bottom: -125px;
+  position: relative;
+  z-index: 1;
+}
+.home #logo {
+  display: none;
+}
+
+/* deixa o btn quem somos da nav ativo */
+.quem-somos #quem-somos {
+  color: #EBB02A;
+}
+
+/* deixa o btn soluções da nav ativo */
+.solucoes #solucoes {
+  color: #EBB02A;
+}
+
+/* deixa o btn contato da nav ativo */
+.contato #contato {
+  background-color: #E20E46;
+}
+
+/* breakdown p/ mobile */
+@media only screen and (max-width: 767px) {
+  header #logo {
+    max-width: 125px;
+    align-self: center;
+  }
+  header nav {
+    display: none;
+  }
+  header button {
+    display: block !important;
+  }
+}/*# sourceMappingURL=style.css.map */
