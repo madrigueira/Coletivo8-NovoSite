@@ -1,7 +1,7 @@
 
 // Chama os components para os arquivos html principais
 $(function(){
-    $('#header').load('../components/header.html');
+    $('#header').load('components/header.html');
 });
 
 // Inicia biblioteca de animações
