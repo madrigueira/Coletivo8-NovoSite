@@ -20,6 +20,14 @@
   max-width: 1250px;
   padding: 30px;
 }
+.bloco-1 h3 {
+  text-transform: uppercase;
+  transform: rotate(270deg) translateX(50%);
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: auto;
+  font-size: 3em;
+}
 .bloco-1 .card {
   background-color: transparent;
   width: 320px;
@@ -99,10 +107,12 @@
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
   transition: 0.2s;
 }
 .bloco-1 .card .card-inner .card-back #btn-1:hover {
-  color: #b10a37;
+  color: #8b072a;
 }
 .bloco-1 .card .card-inner .card-back #btn-2 {
   color: #000;
